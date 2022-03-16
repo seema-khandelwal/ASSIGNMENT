@@ -1,0 +1,12 @@
+package com.te.javabasic.collection;
+
+import java.util.Comparator;
+
+public class StudentByMarks implements Comparator<Student>{
+
+	@Override
+	public int compare(Student o1, Student o2) {
+		return o1.student_marks-o2.student_marks;
+	}
+
+}
